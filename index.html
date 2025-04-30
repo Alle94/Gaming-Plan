@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GamePlan</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; }
+    header, .section, .stats-links { padding: 20px; max-width: 960px; margin: auto; }
+    header { background: #343a40; color: white; text-align: center; }
+    .tagline { font-style: italic; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .feature { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .stats-links a, .oauth-button { display: block; margin: 10px 0; text-decoration: none; color: #007bff; }
+    .oauth-button { padding: 10px; background: #007bff; color: white; border-radius: 5px; text-align: center; max-width: 300px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎮 GamePlan</h1>
+    <p class="tagline">Il tuo alleato strategico per dominare nel gaming competitivo</p>
+  </header>
+
+  <section class="section">
+    <h2>Funzionalità Principali</h2>
+    <div class="features">
+      <div class="feature"><h3>📊 Statistiche</h3><p>Descrizione</p></div>
+      <div class="feature"><h3>📅 Planner Tornei</h3><p>Descrizione</p></div>
+      <div class="feature"><h3>🎯 Missioni</h3><p>Descrizione</p></div>
+      <div class="feature"><h3>🔍 Analisi Replay</h3><p>Descrizione</p></div>
+    </div>
+  </section>
+
+  <section class="stats-links">
+    <h2>Accedi alle Statistiche</h2>
+    <a href="dashboard.html">Dashboard Personale</a>
+    <a href="statistiche.html">Statistiche di Gioco</a>
+    <a href="team.html">Analisi Team</a>
+    <a href="missioni.html">Progressi Missioni</a>
+  </section>
+
+  <section class="stats-links">
+    <h2>Collegamenti a Piattaforme</h2>
+    <a href="https://www.blizzard.com/" target="_blank">Battle.net</a>
+    <a href="https://www.riotgames.com/" target="_blank">Riot Games</a>
+    <a href="https://www.steampowered.com/" target="_blank">Steam</a>
+    <a href="https://www.epicgames.com/" target="_blank">Epic Games</a>
+  </section>
+
+  <section class="section">
+    <h2>Sincronizzazione Account</h2>
+    <p>Effettua il login con il tuo account di gioco preferito per sincronizzare i dati:</p>
+    <a href="/auth/battlenet" class="oauth-button">Login con Battle.net</a>
+    <a href="/auth/riot" class="oauth-button">Login con Riot Games</a>
+    <a href="/auth/steam" class="oauth-button">Login con Steam</a>
+    <a href="/auth/epic" class="oauth-button">Login con Epic Games</a>
+  </section>
+</body>
+</html>
